@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@drawable/storybg"
+    tools:context="com.kulas.admin.rhymes.com.kulas.admin.rhymes.SearchActivity">
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/hidesearchcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:visibility="gone"
+            >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="10dp">
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/login"
+                     android:layout_weight="0.3"
+                    />
+                <View android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.4"></View>
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/signup"
+                    android:layout_weight="0.3"
+                    />
+            </LinearLayout>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp">
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="38dp"
+                        android:background="#872657"
+                        android:layout_weight="0.3"
+                        android:text="COMICAL STORIES (0)"
+                        android:textColor="#ffffff"
+                        android:textSize="16dip"
+                        />
+                    <View android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="0.4"></View>
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="38dp"
+                        android:background="#00688B"
+                        android:layout_weight="0.3"
+                        android:text="COURAGE STORIES (0)"
+                        android:textColor="#ffffff"
+                        android:textSize="16dip"
+                        />
+                </LinearLayout>
+
+
+            </TableRow>
+
+        </TableLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/frontscreen"
+            >
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp">
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:hint="Enter Your URL"
+                    android:inputType="text"
+                    android:text=""
+                    android:background="@drawable/search"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"
+                    android:layout_weight="0.9"
+                    android:paddingLeft="10dp"
+                    />
+
+
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="50dp"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_height="45dp"
+                    android:text="Go"
+                    android:background="#EE3B3B"
+                    android:layout_alignBaseline="@+id/editText"
+                    android:layout_alignBottom="@+id/editText"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="17dp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="0.1"
+                    android:visibility="gone"/>
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                >
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="20dp">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_weight="0.4"
+        android:background="@drawable/left"
+        />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_weight="0.2"
+        android:background="@drawable/gosearch"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_weight="0.4"
+        android:background="@drawable/right"
+        />
+</LinearLayout>
+
+
+
+            </TableRow>
+
+            </TableLayout>
+
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"></WebView>
+
+   <!-- <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>-->
+
+</LinearLayout>
+    </ScrollView>

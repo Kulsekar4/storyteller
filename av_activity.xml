@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    tools:context="com.kulas.admin.rhymes.com.kulas.admin.rhymes.AVActivity"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        android:id="@+id/youtubePlayerView" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        >
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tblrow1"
+
+            >
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/image1"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/image2"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/tblrow1"
+            android:layout_weight="1">
+
+            <TextView
+
+                android:id="@+id/text"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="Mr.Bean"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableRight="@drawable/plus"
+
+                />
+            <TextView
+
+                android:id="@+id/text1"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="Akbar and Birbal"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableRight="@drawable/plus"
+                />
+            </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tblrow2"
+
+            >
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/image3"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/image4"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/tblrow2"
+            android:layout_weight="1">
+
+            <TextView
+
+                android:id="@+id/text3"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="Tom and Jerry"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableRight="@drawable/plus"
+                />
+            <TextView
+
+                android:id="@+id/text4"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="Chhota Bheem"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableRight="@drawable/plus"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tblrow3"
+
+            >
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/image5"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/image6"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/tblrow3"
+            android:layout_weight="1">
+
+            <TextView
+
+                android:id="@+id/text5"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="Dora the explorer"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableRight="@drawable/plus"
+                />
+            <TextView
+
+                android:id="@+id/text6"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="Mickey Mouse"
+                android:layout_weight="0.5"
+                android:background="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableRight="@drawable/plus"
+
+                />
+        </TableRow>
+    </TableLayout>
+    </ScrollView>
+
+   <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageButton1"
+
+                android:layout_weight="0.08" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageButton2"
+
+                android:layout_weight="0.08" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageButton3"
+
+                android:layout_weight="0.08" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageButton4"
+
+                android:layout_weight="0.08" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imageButton5"
+
+                android:layout_weight="0.08" />
+
+
+
+        </LinearLayout>
+    </ScrollView>-->
+
+
+</LinearLayout>

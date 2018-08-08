@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.kulas.admin.rhymes.com.kulas.admin.rhymes.MainActivity">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+       >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            >
+
+
+            <Button
+
+
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/BtnSearch"
+                android:background="@drawable/kidmenu1"
+                android:layout_marginRight="20dp"
+              />
+
+
+            <Button
+
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_below="@+id/BtnSearch"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/BtnAudio"
+                android:background="@drawable/kidmenu2"
+                android:layout_marginLeft="20dp"
+              />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            >
+            <Button
+
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_below="@+id/BtnAudio"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/BtnAV"
+                android:background="@drawable/kidmenu4"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_below="@+id/BtnAV"
+                android:layout_alignRight="@+id/BtnAV"
+                android:layout_alignEnd="@+id/BtnAV"
+                android:id="@+id/BtnHelp"
+                android:background="@drawable/kidmenu3"
+                android:layout_marginLeft="20dp"/>
+
+        </TableRow>
+
+
+
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+       >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+
+                android:layout_below="@+id/BtnHelp"
+                android:layout_alignLeft="@+id/BtnHelp"
+                android:layout_alignStart="@+id/BtnHelp"
+                android:id="@+id/BtnImg"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+  <!--  <Button
+
+        android:text="SearchStories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/BtnSearch" />
+
+    <Button
+        android:text="YourStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtnSearch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/BtnAudio" />
+
+    <Button
+        android:text="AV Story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtnAudio"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/BtnAV" />
+
+    <Button
+        android:text="Help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtnAV"
+        android:layout_alignRight="@+id/BtnAV"
+        android:layout_alignEnd="@+id/BtnAV"
+        android:id="@+id/BtnHelp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_below="@+id/BtnHelp"
+        android:layout_alignLeft="@+id/BtnHelp"
+        android:layout_alignStart="@+id/BtnHelp"
+        android:id="@+id/BtnImg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />-->
+
+</RelativeLayout>

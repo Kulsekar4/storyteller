@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kulas.admin.rhymes.com.kulas.admin.rhymes.AudioActivity"
+    android:weightSum="1"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/intro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter some text:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/enter"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/storybg"
+                android:gravity="start" />
+            <!--<Button android:id="@+id/speak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speak"
+                />-->
+
+
+            <AutoCompleteTextView
+                android:id="@+id/editfiletext"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#ffffff"
+                android:completionHint="filename"
+                android:ems="10"
+                android:hint="filename"
+                android:inputType="textPersonName"
+                android:text=""
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="18dp" />
+
+            <!--   <HorizontalScrollView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   >-->
+
+
+            <!-- <LinearLayout
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="200dp"
+                 android:background="#ffffff"
+                 >
+
+
+
+
+                 <Button android:id="@+id/speak"
+                     android:layout_width="40dp"
+                     android:layout_height="40dp"
+
+                     android:background="@drawable/speak"
+                     android:layout_margin="20dp"
+
+                     />
+             <Button
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+
+                 android:id="@+id/BtnSave"
+                 android:background="@drawable/save"
+                 android:layout_margin="20dp"
+                 />
+
+
+                 <Button
+                     android:layout_width="40dp"
+                     android:layout_height="40dp"
+
+                     android:id="@+id/BtnOpen"
+                     android:background="@drawable/open"
+                     android:layout_margin="20dp"
+                     />
+
+
+                 <Button
+                     android:layout_width="40dp"
+                     android:layout_height="40dp"
+
+                     android:id="@+id/BtnDelete"
+                     android:background="@drawable/delete"
+                     android:layout_margin="20dp"
+                     />
+
+
+
+             </LinearLayout>-->
+
+            <!--  </HorizontalScrollView>-->
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#DEDEDE">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            >
+
+
+            <Button android:id="@+id/speak"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/speak"
+                android:layout_margin="20dp"
+                android:layout_weight="0.1"
+
+                />
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="writeMessage"
+                android:id="@+id/BtnSave"
+                android:background="@drawable/save"
+                android:layout_margin="20dp"
+                android:layout_weight="0.1"
+                />
+
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="readMessage"
+                android:id="@+id/BtnOpen"
+                android:background="@drawable/open"
+                android:layout_margin="20dp"
+                android:layout_weight="0.1"
+                />
+
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="deleteMessage"
+                android:id="@+id/BtnDelete"
+                android:background="@drawable/delete"
+                android:layout_margin="20dp"
+                android:layout_weight="0.1"
+                />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
